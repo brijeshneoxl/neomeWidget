@@ -1,0 +1,45 @@
+{
+  "name": "neomewidget",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "main": "./dist/neomeWidget.umd.cjs",
+    "module": "./dist/neomeWidget.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./dist/neomeWidget.js",
+        "require": "./dist/neomeWidget.umd.cjs"
+      }
+    },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "preact": "^10.19.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.6.0",
+    "@types/node": "^20.9.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.3"
+  },
+  "description": "Neome Widget",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brijeshneoxl/neomeWidget.git"
+  },
+  "keywords": [
+    "neome",
+    "widget"
+  ],
+  "author": "Brijesh",
+  "license": "MIT"
+}
